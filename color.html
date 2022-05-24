@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>パーソナルカラー診断</title>
+  <link rel="stylesheet" href="color.css">
+</head>
+<body>
+  <h1>パーソナルカラー診断</h1>
+  <p>あてはまるものを選択してください　<strong>※複数可</strong></p>
+
+  <div class="question">
+    <h2>Q1,肌の色は?</h2>
+    <input class="spring" type="checkbox" name="skin" value="spring">明るく澄んだ感じ。血色が良い。<br>
+    <input class="summer" type="checkbox" name="skin" value="summer">透明感のあるソフトな感じ。<br>
+    <input class="autumn" type="checkbox" name="skin" value="autumn">黄みが強く、落ち着いたオークル系。<br>
+    <input class="winter" type="checkbox" name="skin" value="winter">青白い感じ。ピンク系の青みがかった色もみられる。<br>
+
+    <h2>Q2,髪の色は?</h2>
+    <input class="spring" type="checkbox" name="hair" value="spring">明るい茶系の色。こげ茶やブラウンの透過色がみられる。<br>
+    <input class="summer" type="checkbox" name="hair" value="summer">くすんだ感じの茶色。ソフトブラウン、やわらかい赤茶系の黒。<br>
+    <input class="autumn" type="checkbox" name="hair" value="autumn">こげ茶色。強い黄みや茶色みがみられる。<br>
+    <input class="winter" type="checkbox" name="hair" value="winter">はっきりとした黒髪。くすみのない髪。<br>
+
+    <h2>Q3,瞳の色は?</h2>
+    <input class="spring" type="checkbox" name="eye" value="spring">明るい茶系の色。中心の黒がよくわかる。<br>
+    <input class="summer" type="checkbox" name="eye" value="summer">くすんだ感じの茶色。やわらかくグレーにぼやけた感じがある。<br>
+    <input class="autumn" type="checkbox" name="eye" value="autumn">濃い茶系の色味。やわらかい黄みを帯びている。<br>
+    <input class="winter" type="checkbox" name="eye" value="winter">黒の強い暗色。コントラストがはっきりしている。<br>
+
+    <h2>Q4,頬の色は?</h2>
+    <input class="spring" type="checkbox" name="cheek" value="spring">血色がいいときはピーチ(黄みのピンク)に照る。<br>
+    <input class="summer" type="checkbox" name="cheek" value="summer">やわらかく、またははっきりピンク色がみられる。<br>
+    <input class="autumn" type="checkbox" name="cheek" value="autumn">くすんだ黄みの赤色。またはあまり色味がない。<br>
+    <input class="winter" type="checkbox" name="cheek" value="winter">血色がいいときは紫みを帯びた赤い色がみられる。<br>
+
+    <h2>Q5,唇の色は?</h2>
+    <input class="spring" type="checkbox" name="lips" value="spring">明るく、透明感のあるピーチの赤みがみられる。<br>
+    <input class="summer" type="checkbox" name="lips" value="summer">やわらかいピンク色。明るいが、ぼんやりとした色味。<br>
+    <input class="autumn" type="checkbox" name="lips" value="autumn">くすんだ橙系の赤色で、落ち着いたくすみのある色味。<br>
+    <input class="winter" type="checkbox" name="lips" value="winter">青ざめている。赤みがあるときは、深みのある赤色。<br>
+  </div>
+
+  <div class="answer">
+    <button id="assessment">診断結果を見る</button>
+    <p>チェックの数が最も多かった季節があなたのパーソナルカラーです！</p>
+    <ul>
+      <li>イエローベース　春　<output id="total-spring"></output>個</li>
+      <button id="detail">特徴を見る</button>
+      <!-- ボタンID必要であれば変える -->
+      <!-- それぞれの特徴が書かれたサイト -->
+      <li>ブルーベース　　夏　<output id="total-summer"></output>個</li>
+      <button id="detail">特徴を見る</button>
+      <li>イエローベース　秋　<output id="total-autumn"></output>個</li>
+      <button id="detail">特徴を見る</button>
+      <li>ブルーベース　　冬　<output id="total-winter"></output>個</li>
+      <button id="detail">特徴を見る</button>
+    </ul>
+  </div>
+
+  <div class="footer">
+    <a href="color.html">診断をやり直す</a><br>
+    <a href="https://tee-room.info/color/personal04.html">参考サイト</a>
+  </div>
+  
+  <script src="color.js"></script>
+</body>
+</html>
