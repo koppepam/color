@@ -1,0 +1,92 @@
+/* 結果を見るボタン */
+button#assessment{
+  appearance: none;
+  border: 0;
+  border-radius: 10px;
+  margin: 5%;
+  padding: 5px 20px;
+  background: #1873e1;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 300ms;
+}
+button#assessment:hover{
+  background: #1bc6b6;
+}
+
+.answer p{
+  font-size: 1.3rem;
+}
+
+ul{
+  list-style: none;
+  padding-left: 0px;
+}
+
+li{
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+li:nth-child(odd){
+  background-color: rgba(247,254,46,0.35);
+  box-shadow: 0 0 20px rgba(247,254,46,0.8); /*ぼかし*/
+}
+li:nth-child(even){
+  background-color: rgba(89,209,242,0.35);
+  box-shadow: 0 0 20px rgba(89,209,242,0.8); /*ぼかし*/
+}
+li:nth-child(odd), li:nth-child(even){
+  margin-top: 5%;
+  padding-top: 5%;
+  border-radius: 20px;
+}
+
+/* 春夏秋冬文字 */
+span#sp, #su, #au, #wi{
+  font-size: 2rem;
+}
+span#sp{
+  color: #f68686;
+}
+span#su{
+  color: #f29100;
+}
+span#au{
+  color: #5a821f;
+}
+span#wi{
+  color: #2c3465;
+}
+
+/* 特徴を見るボタン */
+button#detail-spring, #detail-summer, #detail-autumn, #detail-winter{
+  appearance: none;
+  border: 0;
+  border-radius: 10px;
+  margin: 5%;
+  padding: 5px 20px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  display: inline-block;
+  transition: 300ms;
+}
+button#detail-spring:hover, #detail-summer:hover, #detail-autumn:hover, #detail-winter:hover{
+  transform: scale(1.1);
+}
+
+button#detail-spring{
+  background: #f68686;
+}
+button#detail-summer{
+  background: #f29100;
+}
+button#detail-autumn{
+  background: #5a821f;
+}
+button#detail-winter{
+  background: #2c3465;
+}

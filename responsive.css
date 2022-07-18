@@ -1,0 +1,24 @@
+@media screen and (min-width: 670px) {
+  .question{
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 1000px){
+  #hide{
+  display: none;
+  }
+
+  ul{
+    display: flex;
+  }
+  li{
+    width: 80%;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  li:nth-child(odd),li:nth-child(even){
+    padding-top: 2%;
+  }
+}
