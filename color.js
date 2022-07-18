@@ -5,7 +5,6 @@ totalWinter = document.getElementById('total-winter');
 
 const assessmentButton = document.getElementById
 ('assessment');
-const detailButton = document.getElementById('detail');
 
 //春
 const spring = document.getElementsByClassName('spring');
@@ -59,3 +58,20 @@ assessmentButton.addEventListener("click",getCheckedCountSp,false); //春
 assessmentButton.addEventListener("click",getCheckedCountSm,false); //夏
 assessmentButton.addEventListener("click",getCheckedCountAu,false); //秋
 assessmentButton.addEventListener("click",getCheckedCountWi,false); //冬
+
+//特徴を見るボタン
+document.getElementById('detail-spring').addEventListener("click",function(){
+  location.replace("https://halmek.co.jp/life/c/snazzy/6186");
+},false); //春
+
+document.getElementById('detail-summer').addEventListener("click",function(){
+  location.replace("https://halmek.co.jp/life/c/snazzy/6216");
+},false); //夏
+
+document.getElementById('detail-autumn').addEventListener("click",function(){
+  location.replace("https://halmek.co.jp/life/c/snazzy/6217");
+},false); //秋
+
+document.getElementById('detail-winter').addEventListener("click",function(){
+  location.replace("https://halmek.co.jp/life/c/snazzy/6218");
+},false); //冬
