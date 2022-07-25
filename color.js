@@ -75,3 +75,13 @@ document.getElementById('detail-autumn').addEventListener("click",function(){
 document.getElementById('detail-winter').addEventListener("click",function(){
   location.replace("https://halmek.co.jp/life/c/snazzy/6218");
 },false); //冬
+
+
+let scroll = document.getElementById('scroll');
+//チェックの数が～までスクロール
+assessmentButton.addEventListener("click",function(){
+  scroll.scrollIntoView({
+  behavior: "smooth",
+  block: "start"
+});
+});
