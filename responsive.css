@@ -2,16 +2,28 @@
   #phone{
     display: none;
   }
+}
 
+@media screen and (min-width: 620px) {
   body{
     margin-left: initial;
     margin-right: initial;
   }
-}
 
-@media screen and (min-width: 670px) {
   .question{
     font-size: 1.2rem;
+  }
+
+  input[type="checkbox"] + label::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #999;
+    border-radius: 5px;
   }
 }
 
