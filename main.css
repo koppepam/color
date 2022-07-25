@@ -12,3 +12,8 @@ header,body{
   text-align: center;
   font-family: sans-serif;
 }
+
+body{
+  margin-left: 20px;
+  margin-right: 20px;
+}
