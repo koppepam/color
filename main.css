@@ -13,7 +13,7 @@ header,body{
   font-family: sans-serif;
 }
 
-body{
+.question, h2, label, li, .footer{
   margin-left: 20px;
   margin-right: 20px;
 }
