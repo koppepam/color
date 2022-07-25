@@ -1,3 +1,14 @@
+@media screen and (min-width: 481px) {
+  #phone{
+    display: none;
+  }
+
+  body{
+    margin-left: initial;
+    margin-right: initial;
+  }
+}
+
 @media screen and (min-width: 670px) {
   .question{
     font-size: 1.2rem;
