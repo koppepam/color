@@ -13,6 +13,11 @@
   .question{
     font-size: 1.2rem;
   }
+  
+  label::before{
+    margin-left: 3px;
+    margin-top: 3px;
+  }
 
   input[type="checkbox"] + label::before{
     content: "";
