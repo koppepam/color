@@ -16,8 +16,8 @@ input[type="checkbox"] + label{
 }
 
 label::before{
-  margin-left: 1.5px;
-  margin-top: 1.5px;
+  margin-left: 1.8px;
+  margin-top: 1.8px;
 }
 
 input[type="checkbox"] + label::before{
