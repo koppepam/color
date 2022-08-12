@@ -13,7 +13,7 @@
   .question{
     font-size: 1.2rem;
   }
-  
+
   label::before{
     margin-left: 3px;
     margin-top: 3px;
@@ -30,9 +30,21 @@
     border: 1px solid #999;
     border-radius: 5px;
   }
+
+  ul{
+    column-count: 2;
+    margin: 0px 20px 0px 20px;
+  }
+
+  li:nth-child(odd){
+    margin: 0px;
+  }
+  li:nth-child(even){
+    margin: 20px 0px 20px 0px;
+  }
 }
 
-@media screen and (min-width: 1000px){
+@media screen and (min-width: 1081px){
   #hide{
   display: none;
   }
@@ -42,11 +54,10 @@
   }
   li{
     width: 80%;
-    margin-left: 5px;
-    margin-right: 5px;
   }
 
   li:nth-child(odd),li:nth-child(even){
     padding-top: 2%;
+    margin: 5px;
   }
 }
