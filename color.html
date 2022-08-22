@@ -5,10 +5,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0 minimum-scale=1.0 user-scalable=yes">
   <title>パーソナルカラー診断</title>
-  <link rel="stylesheet" href="./css/main.css">
-  <link rel="stylesheet" href="./css/question.css">
-  <link rel="stylesheet" href="./css/result.css">
-  <link rel="stylesheet" href="./css/responsive.css">
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="question.css">
+  <link rel="stylesheet" href="result.css">
+  <link rel="stylesheet" href="responsive.css">
 </head>
 <header>
   <h1>パーソナルカラー診断</h1>
@@ -132,8 +132,6 @@
     <ul>
       <li>イエローベース <span id="sp">春</span>　<output id="total-spring"></output>個<br>
       <button id="detail-spring">特徴を見る</button></li>
-      <!-- ボタンID必要であれば変える -->
-      <!-- それぞれの特徴が書かれたサイト -->
       <li>ブルーベース <span id="su">夏</span>　<output id="total-summer"></output>個<br>
       <button id="detail-summer">特徴を見る</button></li>
       <li>イエローベース <span id="au">秋</span>　<output id="total-autumn"></output>個<br>
@@ -143,11 +141,13 @@
     </ul>
   </div>
 
+  <div id="tweet-area"></div>
+
   <div class="footer">
     <a href="color.html">診断をやり直す</a><br>
     <a href="https://tee-room.info/color/personal04.html">参考サイト</a>
   </div>
   
-  <script src="./js/color.js"></script>
+  <script src="color.js"></script>
 </body>
 </html>
