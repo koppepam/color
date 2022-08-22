@@ -26,7 +26,25 @@ assessmentButton.addEventListener("click", () => {
   totalSummer.innerText = counter(summer);//夏
   totalAutumn.innerText = counter(autumn);//秋
   totalWinter.innerText = counter(winter);//冬
-}); 
+});
+
+
+//ツイート機能
+const tweetDivided = document.getElementById('tweet-area');
+tweetDivided.innerText = '';
+const anchor = document.createElement('a');
+const hrefValue = 'https://twitter.com/intent/tweet?button_hashtag' + encodeURIComponent('わたしのパーソナルカラー') + '&ref_src=twsrc%5Etfw';
+
+anchor.setAttribute('href',hrefValue);
+anchor.setAttribute('class','twitter-hashtag-button');
+anchor.innerText = 'Tweet #わたしのパーソナルカラー';
+tweetDivided.appendChild(anchor);
+
+// widgets.js
+const script = document.createElement('script');
+script.setAttributeNS('src','https://platform.twitter.com/widgets.js');
+tweetDivided.appendChild(script);
+
 
 
 //特徴を見るボタン
