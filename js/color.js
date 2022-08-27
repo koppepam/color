@@ -29,20 +29,26 @@ assessmentButton.addEventListener("click", () => {
 });
 
 
-//ツイート機能
+// //ツイート機能
 const tweetDivided = document.getElementById('tweet-area');
 tweetDivided.innerText = '';
-const anchor = document.createElement('a');
-const hrefValue = 'https://twitter.com/intent/tweet?button_hashtag' + encodeURIComponent('わたしのパーソナルカラー') + '&ref_src=twsrc%5Etfw';
 
-anchor.setAttribute('href',hrefValue);
+const anchor = document.createElement('a');
+const hrefValue = `https://twitter.com/intent/tweet?button_hashtag=${encodeURIComponent('わたしのパーソナルカラー')}&ref_src=twsrc%5Etfw`;
+
+anchor.setAttribute('href', hrefValue);
 anchor.setAttribute('class','twitter-hashtag-button');
+anchor.setAttribute('data-show-count','false');
+anchor.setAttribute('data-size','large');
+anchor.setAttribute('data-lang','ja');
 anchor.innerText = 'Tweet #わたしのパーソナルカラー';
 tweetDivided.appendChild(anchor);
 
 // widgets.js
 const script = document.createElement('script');
-script.setAttributeNS('src','https://platform.twitter.com/widgets.js');
+script.setAttribute('async','async');
+script.setAttribute('charset','utf-8');
+script.setAttribute('src','https://platform.twitter.com/widgets.js');
 tweetDivided.appendChild(script);
 
 
@@ -73,3 +79,4 @@ assessmentButton.addEventListener("click",function(){
   block: "start"
 });
 });
+
